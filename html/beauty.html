@@ -1,9 +1,32 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <style>
+      
+      #container-img {
+  text-align: justify;
+  font-size: 0.1px; /* IE 9/10 don't like font-size: 0; */
+  min-width: 600px;
+}
+#container-img div {
+  display: inline-block;
+  width: 100%; /* Ensures there are at least 2 lines of text, so justification works */
+  height: 100%;
+  background: red;
+}
+#container-img:after {
+  content: '';
+  width: 100%; /* Ensures there are at least 2 lines of text, so justification works */
+  height: 100%;
+  display: inline-block;
+}  
+      
+    </style>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="../assets/css/styles.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -39,7 +62,22 @@
             <a class="p-2 text-muted" href="../html/booking.html">Booking</a>
           </nav>
         </div>
-
+        <br>
+      <div id="container-img">
+        <img src="../assets/images/beauty1.jpeg" float="left" class="rounded" width="30%" height="30%" alt="beauty1">
+        <img src="../assets/images/beauty2.jpeg" float="right" class="rounded" width="30%" height="30%" alt="beauty2">
+        <img src="../assets/images/beauty3.jpeg" float="right" class="rounded" width="30%" height="30%" alt="beauty3">
+      </div>
+        <br>
+        <div class="beauty-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+          <h1 class="display-4">Beauty</h1>
+          <br>
+          <p class="p-2 text-muted">
+            So glad you're here! I am a hair specialist based in Thousand Oaks, CA.
+            I would love to be involved in your special day, whatever the occasion. I have an abundance of experience and I frequently make people look pretty spectacular for whatever occasion.
+            It is so important to make sure that everything is just so on your special day and choosing the right person for the job is extremely important – feel free to get in touch for a no obligation quote or just to say hello! 
+            </p>
+        </div>
 
         <footer class="footer">
           <div class="container text-center">
